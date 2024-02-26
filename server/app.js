@@ -41,9 +41,10 @@ app.get('/logs', (req, res) => {
         //console.log(`result is ${result}`)
     }
 
+    //let json = JSON.stringify(result);
+    //console.log(`json is ${json}`);
+    res.status(200).json(result);
     let json = JSON.stringify(result);
-    console.log(`json is ${json}`);
-    res.status(200).json(json);
     fs.writeFileSync('output.json', json);
 });
 
