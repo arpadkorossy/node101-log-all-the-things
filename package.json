@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test --exit",
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "dev": "nodemon server/index"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0"
   },
   "devDependencies": {
     "chai": "^4.0.2",
